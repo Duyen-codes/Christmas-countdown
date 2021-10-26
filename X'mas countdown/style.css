@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.container .content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container .content .title {
+    font-size: 5rem;
+    color: #236CAD;
+}
+
+.desc {
+    font-size: 1.5rem;
+    color: #457095;
+    padding: 1rem 0;
+    max-width: 60rem;
+}
+
+.count-down {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.box h3 {
+    font-size: 4.5rem;
+    color: white;
+    background: #236CAD;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.box p {
+    color: #457095;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    
+}
+
+.content .btn {
+    color: #fff;
+    background: #236CAD;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    display: inline-block;
+    transition: .2s linear;
+}
+
+.content .btn:hover {
+    transform: scale(1.2);
+}
+
+.container span {
+    position: absolute;
+    top: -50px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    filter: blur(3px);
+    animation: snowFall 5s linear infinite;
+}
+
+@keyframes snowFall{
+    100%{
+        transform:translateY(105vh) scale(.4);
+    }
+}
